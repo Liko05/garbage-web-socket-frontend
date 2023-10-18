@@ -12,7 +12,7 @@
     let currentMessage = '';
 
 	onMount(async () => {
-		socket = new WebSocket('ws://localhost:1337/chat');
+		socket = new WebSocket('ws://chat-api.cwute.dev/chat');
 		socket.onopen = () => {
 			// @ts-ignore
 			socket.send('Connected');
